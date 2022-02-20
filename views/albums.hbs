@@ -1,0 +1,11 @@
+{{#each response}}
+
+<h2>{{this.name}}</h2>
+{{#each this.images}}
+{{#each this}}
+<img src="{{this}}" alt="pictures" width="200">
+{{/each}}
+{{/each}}
+<button><a href="/albums/{{this.id}}">View tracks</a></button>
+
+{{/each}}
